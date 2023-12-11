@@ -74,7 +74,7 @@
         'Get-SGMugSetpoint',
         'Get-SGMugPowerSource',
         'Get-SGMugLiquidTemperature',
-        'Get-SGMugBattery',
+        'Get-SGMugBatteryLevel',
         'Set-SGMugSetpoint',
         'Enable-SGMugHeater',
         'Disable-SGMugHeater',

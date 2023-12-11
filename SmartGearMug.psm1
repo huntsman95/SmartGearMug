@@ -18,3 +18,5 @@ $public = Get-ChildItem "$PSScriptRoot\public\" -Filter '*.ps1' -Recurse
 $public | ForEach-Object {
     . $_.FullName
 }
+
+Export-ModuleMember *-*
