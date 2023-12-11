@@ -9,31 +9,31 @@
 @{
 
     # Script module or binary module file associated with this manifest.
-    RootModule        = '.\SmartGearMug.psm1'
+    RootModule         = '.\SmartGearMug.psm1'
 
     # Version number of this module.
-    ModuleVersion     = '1.0'
+    ModuleVersion      = '1.0'
 
     # Supported PSEditions
     # CompatiblePSEditions = @()
 
     # ID used to uniquely identify this module
-    GUID              = '742c76e0-bed1-48fa-9d18-3b1e2f83c3d5'
+    GUID               = '742c76e0-bed1-48fa-9d18-3b1e2f83c3d5'
 
     # Author of this module
-    Author            = 'Hunter Klein (@huntsman95)'
+    Author             = 'Hunter Klein (@huntsman95)'
 
     # Company or vendor of this module
-    CompanyName       = 'Skyrptek LLC'
+    CompanyName        = 'Skyrptek LLC'
 
     # Copyright statement for this module
-    Copyright         = '(c) Hunter Klein (@huntsman95). All rights reserved.'
+    Copyright          = '(c) Hunter Klein (@huntsman95). All rights reserved.'
 
     # Description of the functionality provided by this module
     # Description = ''
 
     # Minimum version of the PowerShell engine required by this module
-    PowerShellVersion = '7.0'
+    PowerShellVersion  = '7.0'
 
     # Name of the PowerShell host required by this module
     # PowerShellHostName = ''
@@ -54,7 +54,7 @@
     # RequiredModules = @()
 
     # Assemblies that must be loaded prior to importing this module
-    # RequiredAssemblies = @()
+    RequiredAssemblies = @("$PSScriptRoot\lib\WinRT.Runtime.dll", "$PSScriptRoot\lib\Microsoft.Windows.SDK.NET.dll")
 
     # Script files (.ps1) that are run in the caller's environment prior to importing this module.
     # ScriptsToProcess = @()
@@ -69,16 +69,16 @@
     # NestedModules = @()
 
     # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-    FunctionsToExport = @('Get-SG*', 'Set-SG*', 'Enable-SG*', 'Disable-SG*', 'Connect-SG*', 'Disconnect-SG*')
+    FunctionsToExport  = @('Get-SG*', 'Set-SG*', 'Enable-SG*', 'Disable-SG*', 'Connect-SG*', 'Disconnect-SG*')
 
     # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
-    CmdletsToExport   = @()
+    CmdletsToExport    = @()
 
     # Variables to export from this module
-    VariablesToExport = '*'
+    VariablesToExport  = '*'
 
     # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-    AliasesToExport   = @()
+    AliasesToExport    = @()
 
     # DSC resources to export from this module
     # DscResourcesToExport = @()
@@ -90,7 +90,7 @@
     # FileList = @()
 
     # Private data to pass to the module specified in RootModule/ModuleToProcess. This may also contain a PSData hashtable with additional module metadata used by PowerShell.
-    PrivateData       = @{
+    PrivateData        = @{
 
         PSData = @{
 
