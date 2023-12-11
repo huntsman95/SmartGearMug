@@ -6,6 +6,8 @@ filter parseNtcTemp {
 }
 
 function Get-SGMugLiquidTemperature {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'getntc'
     Start-Sleep -Milliseconds 100

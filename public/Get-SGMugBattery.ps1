@@ -6,6 +6,8 @@ filter parseBatteryValue {
 }
 
 function Get-SGMugBatteryLevel {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'getbatter'
     Start-Sleep -Milliseconds 100

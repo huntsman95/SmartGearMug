@@ -1,4 +1,6 @@
 function Disable-SGMugHeater {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'thermostatoff'
     Start-Sleep -Milliseconds 100

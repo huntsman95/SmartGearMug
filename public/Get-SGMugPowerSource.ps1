@@ -10,6 +10,8 @@ filter parsePowerState {
 }
 
 function Get-SGMugPowerSource {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     try {
         Write-GATTValue -TextValue 'getpower'

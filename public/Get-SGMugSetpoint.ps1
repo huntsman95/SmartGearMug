@@ -6,6 +6,8 @@ filter parseSetpointTemp {
 }
 
 function Get-SGMugSetpoint {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'gettemperature'
     Start-Sleep -Milliseconds 100

@@ -1,4 +1,6 @@
 function Enable-SGMugHeater {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'thermostaton'
     Start-Sleep -Milliseconds 100

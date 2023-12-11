@@ -10,6 +10,8 @@ filter parseHeaterState {
 }
 
 function Get-SGMugState {
+    [CmdletBinding()]
+    param ()
     Test-SGMugConnection
     Write-GATTValue -TextValue 'getstate'
     Start-Sleep -Milliseconds 100
