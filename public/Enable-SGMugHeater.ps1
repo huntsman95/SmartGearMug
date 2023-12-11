@@ -6,4 +6,5 @@ function Enable-SGMugHeater {
     if ($state.Heater_State -ne 'Enabled') {
         Write-Error 'Failed to enable coffee mug heater'
     }
+    $state | Write-Output
 }
