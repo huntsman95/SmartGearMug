@@ -1,7 +1,7 @@
 filter parseSetpointTemp {
-    [int]$temp = $_ -replace 'temperature=', ''
+    $temp = ($_ -replace 'temperature=', '').Trim()
     [pscustomobject]@{
-        Setpoint_Temperature_F = $temp
+        Setpoint_Temperature_F = [int]::Parse($temp)
     }
 }
 

@@ -1,10 +1,3 @@
-filter parseSetpointTemp {
-    $temp = $_ -replace 'temperature=', ''
-    [pscustomobject]@{
-        Setpoint_Temperature_F = $temp
-    }
-}
-
 function Set-SGMugSetpoint {
     [CmdletBinding()]
     param (
